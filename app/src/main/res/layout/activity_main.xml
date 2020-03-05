@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/bangers"
+            android:text="SLAMBOOK"
+            android:textAlignment="center"
+            android:textColor="#1051F7"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/jolly_lodger"
+            android:text="@string/blank"
+            android:textAlignment="center"
+            android:textColor="#E4050505"
+            android:textSize="40sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nicknameView"
+            android:text="@string/blank"
+            style="@style/result"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/age"
+            android:text="@string/blank"
+            style="@style/result"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/thankYou"
+            android:text="@string/thank_you"
+            style="@style/result"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="577dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameHeader"
+                    style="@style/category"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/editName"
+                    style="@style/edit"
+                    android:hint="@string/nameEdit"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/nicknameHeader"
+                    style="@style/category"
+                    android:text="@string/nickname" />
+
+                <EditText
+                    android:id="@+id/nicknameEdit"
+                    style="@style/edit"
+                    android:hint="@string/enter_nickname"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/ageHeader"
+                    style="@style/category"
+                    android:text="@string/age" />
+
+                <EditText
+                    android:id="@+id/ageEdit"
+                    style="@style/edit"
+                    android:hint="@string/enter_age"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/birthdayHeader"
+                    style="@style/category"
+                    android:text="When is your birthday?" />
+
+                <EditText
+                    android:id="@+id/birthdayEdit"
+                    style="@style/edit"
+                    android:hint="@string/enter_birthday"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/courseHeader"
+                    style="@style/category"
+                    android:text="@string/course" />
+
+                <EditText
+                    android:id="@+id/courseEdit"
+                    style="@style/edit"
+                    android:hint="@string/enter_course"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/mobNumHeader"
+                    style="@style/category"
+                    android:text="@string/mob_num" />
+
+                <EditText
+                    android:id="@+id/mobNumEdit"
+                    style="@style/category"
+
+                    android:hint="@string/enter_your_mobile_number"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/colorHeader"
+                    style="@style/category"
+                    android:text="@string/color" />
+
+                <EditText
+                    android:id="@+id/colorEdit"
+                    style="@style/edit"
+                    android:hint="@string/enter_your_favorite_color"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/dreamHeader"
+                    style="@style/category"
+                    android:text="@string/what_is_your_ultimate_dream" />
+
+                <EditText
+                    android:id="@+id/dreamEdit"
+                    style="@style/edit"
+                    android:hint="@string/enter_dream"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/crushHeader"
+                    style="@style/category"
+                    android:text="@string/who_is_your_secret_crush" />
+
+                <EditText
+                    android:id="@+id/crushEdit"
+                    style="@style/edit"
+                    android:hint="@string/enter_your_crush"
+                    android:text="@string/blank" />
+
+                <TextView
+                    android:id="@+id/messageHeader"
+                    style="@style/category"
+                    android:text="@string/what_is_your_message_for_me" />
+
+                <EditText
+                    android:id="@+id/messageEdit"
+                    style="@style/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/what_is_your_message_for_me"
+                    android:inputType="textMultiLine"
+                    android:text="@string/blank" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#1051F7"
+            android:text="@string/submit"
+
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+</layout>

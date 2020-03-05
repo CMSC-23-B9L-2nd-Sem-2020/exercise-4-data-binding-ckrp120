@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='cadacio_exer4_SlamBook'

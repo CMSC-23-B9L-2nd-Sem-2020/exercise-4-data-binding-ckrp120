@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">cadacio_exer4_SlamBook</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="blank" />
+    <string name="nameEdit">Enter your name</string>
+    <string name="enter_nickname">Enter Nickname</string>
+    <string name="name">Name</string>
+    <string name="nickname">Nickname</string>
+    <string name="age">Age</string>
+    <string name="enter_age">Enter age</string>
+    <string name="enter_birthday">Enter birthday</string>
+    <string name="enter_course">Enter course</string>
+    <string name="course">Course</string>
+    <string name="mob_num">Phone Number</string>
+    <string name="color">What is your favorite color?</string>
+    <string name="enter_your_favorite_color">Enter your favorite color</string>
+    <string name="what_is_your_ultimate_dream">What is your ultimate dream?</string>
+    <string name="enter_dream">Enter Dream</string>
+    <string name="who_is_your_secret_crush">Who is your secret crush?</string>
+    <string name="what_is_your_message_for_me">What is your message for me?</string>
+    <string name="what_is_your_message_for_me">What is your message for me?</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_crush">Enter your crush</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+</resources>
