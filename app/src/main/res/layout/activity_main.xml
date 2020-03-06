@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="user"
+            type="com.example.cadacio_exer4_slambook.UserInfo" />
     </data>
 
     <LinearLayout
@@ -34,7 +36,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/jolly_lodger"
-            android:text="@string/blank"
+            android:text="@={user.name}"
             android:textAlignment="center"
             android:textColor="#E4050505"
             android:textSize="40sp"
@@ -42,30 +44,33 @@
 
         <TextView
             android:id="@+id/nicknameView"
-            android:text="@string/blank"
             style="@style/result"
-            android:visibility="gone" />
+            android:text="@={user.nickname}"
+            android:visibility="gone"
+            />
 
         <TextView
             android:id="@+id/age"
-            android:text="@string/blank"
             style="@style/result"
+            android:text="@={user.age}"
             android:visibility="gone" />
 
         <TextView
             android:id="@+id/thankYou"
-            android:text="@string/thank_you"
             style="@style/result"
+            android:text="@string/thank_you"
             android:visibility="gone" />
 
         <ScrollView
+            android:id="@+id/scrollview"
             android:layout_width="match_parent"
-            android:layout_height="577dp">
+            android:layout_height="464dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                >
 
                 <TextView
                     android:id="@+id/nameHeader"
@@ -129,11 +134,11 @@
 
                 <EditText
                     android:id="@+id/mobNumEdit"
-                    style="@style/category"
+                    style="@style/edit"
 
+                    android:ems="10"
                     android:hint="@string/enter_your_mobile_number"
                     android:inputType="phone"
-                    android:ems="10"
                     android:text="@string/blank" />
 
                 <TextView
@@ -176,14 +181,18 @@
 
                 <EditText
                     android:id="@+id/messageEdit"
-                    style="@style/category"
+                    style="@style/edit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:gravity="start|top"
                     android:hint="@string/what_is_your_message_for_me"
                     android:inputType="textMultiLine"
-                    android:text="@string/blank" />
+                    android:text="@string/blank"
+                     android:layout_gravity="top"/>
+
+
+
 
             </LinearLayout>
 
@@ -199,7 +208,5 @@
             android:text="@string/submit"
 
             android:textColor="#FFFFFF" />
-
-
     </LinearLayout>
 </layout>
